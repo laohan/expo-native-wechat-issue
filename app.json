@@ -9,7 +9,22 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "weixin",
+          "weixinULAPI",
+          "weixinURLParamsAPI",
+          "weixin",
+          "weixinULAPI",
+          "weixinURLParamsAPI"
+        ]
+      },
+      "associatedDomains": [
+        "applinks:example.com",
+        "applinks:example.com"
+      ],
+      "bundleIdentifier": "com.zmbdc.wxpay"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,6 +39,9 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "expo-native-wechat"
+      ],
       "expo-router",
       [
         "expo-splash-screen",
